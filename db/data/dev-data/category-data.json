@@ -1,6 +1,9 @@
 [
-    { "category_name": "Category A"},
-    { "category_name": "Category B"},
-    { "category_name": "Category C"},
-    { "category_name": "Category D"}
+  { "category_name": "Crisps" },
+  { "category_name": "Biscuits" },
+  { "category_name": "Chocolate" },
+  { "category_name": "Pastries" },
+  { "category_name": "Fruit" },
+  { "category_name": "Vegetables" },
+  { "category_name": "Other" }
 ]

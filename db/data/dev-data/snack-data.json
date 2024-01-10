@@ -1,38 +1,75 @@
 [
   {
-    "snack_name": "DEV Snack A",
-    "snack_description": "DEV Snack description A",
+    "snack_name": "Kit Kat",
+    "snack_description": "Time for a break",
     "price_in_pence": 100,
-    "category": "Category B"
+    "category": "Chocolate"
   },
   {
-    "snack_name": "DEV Snack B",
-    "snack_description": "DEV Snack description B",
-    "price_in_pence": 10,
-    "category": "Category B"
+    "snack_name": "Party Rings",
+    "snack_description": "Can't have a party without them",
+    "price_in_pence": 80,
+    "category": "Biscuits"
   },
   {
-    "snack_name": "DEV Snack D",
-    "snack_description": "DEV Snack description D",
+    "snack_name": "Hula Hoops",
+    "snack_description": "The party ring of the crisp world",
+    "price_in_pence": 65,
+    "category": "Crisps"
+  },
+
+  {
+    "snack_name": "Banana",
+    "snack_description": "Monkeys open them upside down",
+    "price_in_pence": 65,
+    "category": "Fruit"
+  },
+  {
+    "snack_name": "Chocolate Covered Raisins",
+    "snack_description": "You can never stop at one",
     "price_in_pence": 120,
-    "category": "Category C"
+    "category": "Chocolate"
   },
   {
-    "snack_name": "DEV Snack E",
-    "snack_description": "DEV Snack description E",
-    "price_in_pence": 70,
-    "category": "Category A"
+    "snack_name": "Butter Croissant",
+    "snack_description": "Always appreciated",
+    "price_in_pence": 175,
+    "category": "Pastries"
   },
   {
-    "snack_name": "DEV Snack C",
-    "snack_description": "DEV Snack description C",
-    "price_in_pence": 150,
-    "category": "Category A"
+    "snack_name": "Wheat Crunchies",
+    "snack_description": "It’s Crunch Time!",
+    "price_in_pence": 90,
+    "category": "Crisps"
   },
   {
-    "snack_name": "DEV Snack F",
-    "snack_description": "DEV Snack description F",
-    "price_in_pence": 200,
-    "category": "Category B"
+    "snack_name": "Pom Bears",
+    "snack_description": "I'm sorry, little buddies",
+    "price_in_pence": 85,
+    "category": "Crisps"
+  },
+  {
+    "snack_name": "Vegan Sausage Roll",
+    "snack_description": "The pinnacle of modern science",
+    "price_in_pence": 195,
+    "category": "Pastries"
+  },
+  {
+    "snack_name": "Space Raiders",
+    "snack_description": "A classic lunchbox treat",
+    "price_in_pence": 100,
+    "category": "40"
+  },
+  {
+    "snack_name": "Nice Biscuits",
+    "snack_description": "More like 'alright' biscuits",
+    "price_in_pence": 65,
+    "category": "Biscuits"
+  },
+  {
+    "snack_name": "Cheese String",
+    "snack_description": "90% PVA glue",
+    "price_in_pence": 60,
+    "category": "Other"
   }
 ]
