@@ -1,0 +1,38 @@
+[
+  {
+    "snack_name": "DEV Snack A",
+    "snack_description": "DEV Snack description A",
+    "price_in_pence": 100,
+    "category": "Category B"
+  },
+  {
+    "snack_name": "DEV Snack B",
+    "snack_description": "DEV Snack description B",
+    "price_in_pence": 10,
+    "category": "Category B"
+  },
+  {
+    "snack_name": "DEV Snack D",
+    "snack_description": "DEV Snack description D",
+    "price_in_pence": 120,
+    "category": "Category C"
+  },
+  {
+    "snack_name": "DEV Snack E",
+    "snack_description": "DEV Snack description E",
+    "price_in_pence": 70,
+    "category": "Category A"
+  },
+  {
+    "snack_name": "DEV Snack C",
+    "snack_description": "DEV Snack description C",
+    "price_in_pence": 150,
+    "category": "Category A"
+  },
+  {
+    "snack_name": "DEV Snack F",
+    "snack_description": "DEV Snack description F",
+    "price_in_pence": 200,
+    "category": "Category B"
+  }
+]

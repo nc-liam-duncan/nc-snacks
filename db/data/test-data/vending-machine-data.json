@@ -1,0 +1,6 @@
+[
+    { "location": "Location A", "rating": 1},
+    { "location": "Location B", "rating": 7},
+    { "location": "Location C", "rating": 4},
+    { "location": "Location D", "rating": 9}
+]
