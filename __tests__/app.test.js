@@ -47,16 +47,16 @@ describe("GET /api/snacks/:snack_id", () => {
     return request(app)
       .get("/api/snacks/not-an-id")
       .expect(400)
-      .then(({ body: { message } }) => {
-        expect(message).toBe("Invalid id type");
+      .then(({ body: { msg } }) => {
+        expect(msg).toBe("Invalid id type");
       });
   });
   it("responds with status 404 and an error message if passed a valid snack_id that does not exist in the database", () => {
     return request(app)
       .get("/api/snacks/1000")
       .expect(404)
-      .then(({ body: { message } }) => {
-        expect(message).toBe("Id not found");
+      .then(({ body: { msg } }) => {
+        expect(msg).toBe("Id not found");
       });
   });
 });

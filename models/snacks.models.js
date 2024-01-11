@@ -12,7 +12,7 @@ const fetchSnackBySnackId = (id) => {
     .query(`SELECT * FROM snacks WHERE snack_id=$1`, [id])
     .then(({ rows }) => {
       if (rows.length === 0) {
-        return Promise.reject({ status: 404, message: "Id not found" });
+        return Promise.reject({ status: 404, msg: "Id not found" });
       }
       return rows[0];
     });

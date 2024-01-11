@@ -1,20 +1,20 @@
-exports.psqlErrorHandler = (err, request, response, next) => {
+exports.psqlErrorHandler = (err, req, res, next) => {
   if (err.code === "22P02") {
-    response.status(400).send({ message: "Invalid id type" });
+    res.status(400).send({ msg: "Invalid id type" });
   } else {
     next(err);
   }
 };
 
-exports.customErrorHandler = (err, request, response, next) => {
-  if (err.status && err.message) {
-    response.status(err.status).send({ message: err.message });
+exports.customErrorHandler = (err, req, res, next) => {
+  if (err.status && err.msg) {
+    res.status(err.status).send({ msg: err.msg });
   } else {
     next(err);
   }
 };
 
-exports.serverErrorHandler = (err, request, response, next) => {
+exports.serverErrorHandler = (err, req, res, next) => {
   console.log(err);
-  response.status(500).send({ message: "Internal server error" });
+  res.status(500).send({ msg: "Internal server error" });
 };
