@@ -23,7 +23,7 @@ describe("GET /api/snacks", () => {
           expect(typeof snack.snack_id).toBe("number");
           expect(typeof snack.snack_name).toBe("string");
           expect(typeof snack.snack_description).toBe("string");
-          expect(typeof snack["price_in_pence"]).toBe("number");
+          expect(typeof snack.price_in_pence).toBe("number");
           expect(typeof snack.category_id).toBe("number");
         });
       });
