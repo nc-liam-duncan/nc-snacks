@@ -1,13 +1,8 @@
 const db = require("./connection.js");
 const format = require("pg-format");
-const {
-  categoriesData,
-  snacksData,
-  vendingMachineData
-} = require("./data/test-data");
 const { createRef, formatSnacksData } = require("../utils/seed-formatting.js");
 
-const seed = () => {
+const seed = ({ categoriesData, snacksData, vendingMachineData }) => {
   return db
     .query("DROP TABLE IF EXISTS snacks")
     .then(() => {
