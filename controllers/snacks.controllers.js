@@ -4,30 +4,30 @@ const {
   addSnack
 } = require("../models/snacks.models");
 
-const getSnacks = (request, response, next) => {
+const getSnacks = (req, res, next) => {
   fetchSnacks()
     .then((snacks) => {
-      response.status(200).send({ snacks });
+      res.status(200).send({ snacks });
     })
     .catch((err) => {
       next(err);
     });
 };
-const getSnackBySnackId = (request, response, next) => {
-  const { snack_id } = request.params;
+const getSnackBySnackId = (req, res, next) => {
+  const { snack_id } = req.params;
   fetchSnackBySnackId(snack_id)
     .then((snack) => {
-      response.status(200).send({ snack });
+      res.status(200).send({ snack });
     })
     .catch((err) => {
       next(err);
     });
 };
 
-const postSnack = (request, response) => {
-  const newSnack = request.body;
+const postSnack = (req, res) => {
+  const newSnack = req.body;
   addSnack(newSnack).then(() => {
-    response.status(201).send({ newSnack });
+    res.status(201).send({ newSnack });
   });
 };
 
