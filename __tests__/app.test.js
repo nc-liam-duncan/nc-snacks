@@ -28,6 +28,38 @@ describe("GET /api/snacks", () => {
         });
       });
   });
+  it("by default, the snacks are sorted by snack_name", () => {
+    return request(app)
+      .get("/api/snacks")
+      .then(({ body }) => {
+        expect(body.snacks).toBeSortedBy("snack_name");
+      });
+  });
+  it("sorts snacks by given sort_by query", () => {
+    return request(app)
+      .get("/api/snacks?sort_by=price_in_pence")
+      .then(({ body }) => {
+        expect(body.snacks).toBeSortedBy("price_in_pence");
+      });
+  });
+  it("can filter snacks by given category query", () => {
+    return request(app)
+      .get("/api/snacks?category=Category A")
+      .then(({ body }) => {
+        expect(body.snacks).toHaveLength(2);
+        body.snacks.forEach((snack) => {
+          expect(snack.category_name).toBe("Category A");
+        });
+      });
+  });
+  it("400 - providing an invalid sort_by query", () => {
+    return request(app)
+      .get("/api/snacks?sort_by=nonsense")
+      .expect(400)
+      .then(({ body }) => {
+        expect(body.msg).toBe("invalid sort_by query");
+      });
+  });
 });
 
 describe("GET /api/snacks/:snack_id", () => {
