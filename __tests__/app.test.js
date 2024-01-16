@@ -60,6 +60,22 @@ describe("GET /api/snacks", () => {
         expect(body.msg).toBe("invalid sort_by query");
       });
   });
+  it("404 - providing a non-existent category query", () => {
+    return request(app)
+      .get("/api/snacks?category=not_a_category")
+      .expect(404)
+      .then(({ body }) => {
+        expect(body.msg).toBe("category not found");
+      });
+  });
+  it("200 - responds with empty array given category with no snacks", () => {
+    return request(app)
+      .get("/api/snacks?category=Category D")
+      .expect(200)
+      .then(({ body }) => {
+        expect(body.snacks).toEqual([]);
+      });
+  });
 });
 
 describe("GET /api/snacks/:snack_id", () => {
