@@ -1,0 +1,11 @@
+[
+  { "location": "Cobham Services (floor 1)", "rating": 10 },
+  { "location": "The Olympiad, Chippenham (basement)", "rating": 7 },
+  { "location": "The Olympiad, Chippenham (mezzanine)", "rating": 1 },
+  { "location": "Manchester Arndale", "rating": 4 },
+  { "location": "Eureka, Halifax", "rating": 9 },
+  { "location": "National Maritime Museum", "rating": 2 },
+  { "location": "Denham Aerodrome", "rating": 6 },
+  { "location": "Elland Road (north stand)", "rating": 9 },
+  { "location": "Angel of the North (big Toe, left Foot)", "rating": 10 }
+]
