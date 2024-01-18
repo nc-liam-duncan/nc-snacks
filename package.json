@@ -2,12 +2,13 @@
   "name": "nc_snacks",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "listen.js",
   "scripts": {
     "test": "jest",
     "start": "nodemon listen.js",
     "setup-dbs": "psql -f db/setup.sql",
-    "seed-dev": "node db/seed-dev.js"
+    "seed-dev": "node db/seed-dev.js",
+    "seed-prod": "NODE_ENV=production npm run seed-dev"
   },
   "repository": {
     "type": "git",
