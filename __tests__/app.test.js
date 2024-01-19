@@ -65,7 +65,7 @@ describe("GET /api/snacks", () => {
       .get("/api/snacks?category=not_a_category")
       .expect(404)
       .then(({ body }) => {
-        expect(body.msg).toBe("category not found");
+        expect(body.msg).toBe("category not found!");
       });
   });
   it("200 - responds with empty array given category with no snacks", () => {
