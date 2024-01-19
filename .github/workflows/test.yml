@@ -35,6 +35,6 @@ jobs:
           postgresql user: mr_testymctest
           postgresql password: pa55word
       - name: Install dependencies
-        uses: npm install
+        run: npm install
       - name: Test app
-        uses: PGDATABASE=test_db PGUSER=mr_testymctest PGPASSWORD=pa55word npm test
+        run: PGDATABASE=test_db PGUSER=mr_testymctest PGPASSWORD=pa55word npm test
